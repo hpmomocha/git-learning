@@ -1,0 +1,22 @@
+## clone a repository from github.com
+1. cd <your target git workspace>
+2. git clone git@github.com:<your username>/<your repository> 
+## git clone git@github.com:hpmomocha/git-learning.git
+
+##add the local directory to the github repository
+#进入项目所在的本地目录
+1. cd <your local directory>
+#将目录初始化为一个 Git 项目
+2. git init
+#将所有文件放进新的本地 git 仓库
+#如果你本地已经有 .gitignore #文件，会按照已有规则过滤不需要添加的文件。如果不想要添加所有文件，可以把 . 符号换成具体的文件名
+3. git add .
+#将添加的文件提交到仓库
+4. git commit -m "Inital Commit"
+#访问 GitHub, 创建一个新的仓库。为了避免冲突，先不要勾选 README 和 LICENSE 选项
+#在生成的项目主页上，复制仓库地址。然后将本地仓库关联到远程仓库
+5. git remote add origin git@github.com:<your username>/<your repository>
+#查看结果
+6. git remote -v
+#提交代码到 GitHub 仓库
+7. git push origin master
