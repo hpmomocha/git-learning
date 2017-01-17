@@ -20,3 +20,10 @@
 6. git remote -v
 #提交代码到 GitHub 仓库
 7. git push origin master
+
+
+##git add后, git commit之前如何撤销
+1. 单个文件，建议用 git reset HEAD <filename>
+2. 多个文件，建议用 git rm -r --cached .
+
+##批量add，使用 git add .
